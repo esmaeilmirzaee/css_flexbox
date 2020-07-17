@@ -3,22 +3,16 @@
 $colourOne: #ffcc4c
 
 .container
-  border: 5px solid $colourOne
   display: flex
   flex-wrap: wrap
 
-.container > div
-  width: 800px
+.container > div > img
+  width: 100%
+  height: 100%
+  object-fit: cover
 
-.item__one
-  order: 1
+.container > .normal
+  flex: 1 1 150px
 
-.item__two
-  order: 0
-
-.item__three
-  order: 2
-
-@media all and (max-width: 600px)
-  .container
-    flex-wrap: nowrap
+.container > .big
+  flex: 1 1 250px
