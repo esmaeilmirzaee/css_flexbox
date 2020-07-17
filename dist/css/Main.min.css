@@ -37,3 +37,23 @@ html, body {
 .container > div {
   width: 800px;
 }
+
+.home {
+  display: none;
+}
+
+.logout {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+}
+
+.home {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+}
