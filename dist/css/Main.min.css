@@ -38,22 +38,27 @@ html, body {
   width: 800px;
 }
 
-.home {
-  display: none;
+.item__one {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
-.logout {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 200px;
-          flex: 1 1 200px;
+.item__two {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
-.home {
-  -webkit-box-flex: 10;
-      -ms-flex-positive: 10;
-          flex-grow: 10;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
+.item__three {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
